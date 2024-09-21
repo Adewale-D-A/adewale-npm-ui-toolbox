@@ -2,20 +2,35 @@
   "name": "adewale-ui-toolbox",
   "version": "0.0.1",
   "description": "custom ui for fast and reusable development",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "modle",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bundle": "tsup src/index.ts"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Adewale-D-A/adewale-npm-toolbox"
+    "url": "https://github.com/Adewale-D-A/adewale-npm-ui-toolbox"
   },
   "homepage": "https://www.adewaleda.com/",
   "keywords": [
-    "logic",
-    "utils",
+    "components",
+    "react",
+    "next",
+    "ui",
     "fast development"
   ],
   "author": "adewale",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@swc/core": "^1.7.26",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
 }
