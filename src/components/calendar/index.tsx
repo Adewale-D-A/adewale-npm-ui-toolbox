@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import NavigatePrevIcon from "../../assets/icons/navigate-prev";
 import NavigateNextIcon from "../../assets/icons/navigate-next";
+import "./styles/index.css";
 
 const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const months = [

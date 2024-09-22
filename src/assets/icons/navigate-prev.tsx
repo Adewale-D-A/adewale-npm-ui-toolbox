@@ -1,5 +1,7 @@
 export default function NavigatePrevIcon({
   className,
+}: {
+  className?: string;
 }) {
   return (
     <svg
@@ -8,7 +10,7 @@ export default function NavigatePrevIcon({
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className={className ? className : "w-6 h-6"}
+      className={className ? className : "icons"}
     >
       <path
         strokeLinecap="round"
