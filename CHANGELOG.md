@@ -1,3 +1,7 @@
+##### 18.10.2024
+
+> Drag to reorder component development and deployment
+
 ##### 30.09.2024
 
 > Image card slider component addition

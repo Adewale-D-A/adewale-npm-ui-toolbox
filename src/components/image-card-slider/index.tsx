@@ -1,6 +1,6 @@
+import { useCallback, useState } from "react";
 import NavigateNext from "../../assets/icons/navigate-next";
 import NavigateBefore from "../../assets/icons/navigate-prev";
-import { useCallback, useState } from "react";
 
 export default function ImageCardSlider({
   staffs,

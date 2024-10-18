@@ -5,4 +5,22 @@ declare function CalendarView({ date, highlights, }: {
     highlights?: Date[];
 }): react_jsx_runtime.JSX.Element;
 
-export { CalendarView };
+declare function DragToReOrder({ data, setData, classnames, allowDelete, }: {
+    data: {
+        id: string;
+        image?: string;
+        text?: string;
+    }[];
+    setData: Function;
+    classnames?: {
+        parentContainer?: string;
+        childContainer?: string;
+        image?: string;
+        text?: string;
+        binButton?: string;
+        binIcon?: string;
+    };
+    allowDelete?: boolean;
+}): react_jsx_runtime.JSX.Element;
+
+export { CalendarView, DragToReOrder };
