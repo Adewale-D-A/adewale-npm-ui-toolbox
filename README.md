@@ -48,30 +48,83 @@ export default function DragComponent() {
     </tr>
     <tr>
       <td>data</td>
-      <td>``` data: {id: string, image?: string, text?: string, inputFieldText?: string, showInoutField?: boolean}```</td>
+      <td>data: {id: string, image?: string, text?: string, inputFieldText?: string, showInoutField?: boolean}</td>
       <td>`id` is expexted to be unique and compulsory. other fields are optional</td>
     </tr>
     <tr>
       <td>setData</td>
-      <td></td>
-      <td></td>
+      <td>Function i.e. setState</td>
+      <td>State object manipulation</td>
     </tr>
     <tr>
       <td>classnames</td>
-      <td></td>
-      <td></td>
+      <td>{
+    parentContainer?: string;
+    childContainer?: string;
+    image?: string;
+    text?: string;
+    binButton?: string;
+    binIcon?: string;
+    input?: string;
+    inputIcon?: string;
+    enableInputIcon?: string;
+  }</td>
+      <td>Class names for all HTML tags used in the  component for more customizable experience, see below table to get more understanding of HTML tags hierarchy</td>
     </tr>
     <tr>
       <td>allowDelete</td>
-      <td></td>
-      <td></td>
+      <td>boolean</td>
+      <td>Shows delete button icon which enables item deletion</td>
     </tr>
     <tr>
       <td>inputConfigration</td>
-      <td></td>
-      <td></td>
+      <td>{
+    allowField?: boolean;
+    rows?: number;
+  }</td>
+      <td> Optional configuration for input field</td>
     </tr>
     </table>
+
+```
+
+    <div
+      className={classnames?.parentContainer || "default-parent-container-class-name"}
+      >
+        <div
+          className={
+            classnames?.childContainer ||"default-child-container-class-name"
+          }
+          >
+            <img
+              className={classnames?.image || "default-image-class-name"}
+              />
+            <span className={classnames?.text || default-text-class-name"}></span>
+            <button
+              className={classnames?.binButton || "default-delete-button-class-name"}
+              title="delete item"
+            >
+              <BinIcon className={classnames?.binIcon || "defualt-delete-icon-class-name"} />
+            </button>
+            <button
+              className={
+                classnames?.binButton || "default-delete-button-class-name"
+              }
+              title="toggle input field display"
+            >
+              <InputFieldIcon
+                className={`${classnames?.inputIcon || "default-input-icon-class-name"} ${
+                   classnames?.enableInputIcon
+                }`}
+            </button>
+            <textarea
+              rows={inputConfigration?.rows || 1}
+              className={classnames?.input || "defualt-input-field-class-name"}
+            />
+        </div>
+    </div>
+
+```
 
 ### Calendar-view
 
