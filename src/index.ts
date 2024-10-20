@@ -1,3 +1,4 @@
 import CalendarView from "./components/calendar";
 import DragToReOrder from "./components/drag-to-reorder";
-export { CalendarView, DragToReOrder };
+import ImageCarousel from "./components/carousel";
+export { CalendarView, DragToReOrder, ImageCarousel };

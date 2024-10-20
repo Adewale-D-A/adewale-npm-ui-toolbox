@@ -86,40 +86,23 @@ export default function DragComponent() {
     </tr>
     </table>
 
+#### classnames Props Hierarchy
+
 ```
 
-    <div
-      className={classnames?.parentContainer || "default-parent-container-class-name"}
-      >
-        <div
-          className={
-            classnames?.childContainer ||"default-child-container-class-name"
-          }
-          >
-            <img
-              className={classnames?.image || "default-image-class-name"}
-              />
-            <span className={classnames?.text || default-text-class-name"}></span>
-            <button
-              className={classnames?.binButton || "default-delete-button-class-name"}
-              title="delete item"
-            >
-              <BinIcon className={classnames?.binIcon || "defualt-delete-icon-class-name"} />
+    <div className={classnames?.parentContainer} ...>
+        <div className={classnames?.childContainer} ... >
+            <img className={classnames?.image} .../>
+            <span className={classnames?.text}></span>
+            <button className={classnames?.binButton} ... >
+              <BinIcon className={classnames?.binIcon} />
             </button>
-            <button
-              className={
-                classnames?.binButton || "default-delete-button-class-name"
-              }
-              title="toggle input field display"
-            >
-              <InputFieldIcon
-                className={`${classnames?.inputIcon || "default-input-icon-class-name"} ${
-                   classnames?.enableInputIcon
-                }`}
+            <button className={ classnames?.binButton} ...
+              <InputFieldIcon className={`${classnames?.inputIcon} ${classnames?.enableInputIcon}`}
             </button>
             <textarea
               rows={inputConfigration?.rows || 1}
-              className={classnames?.input || "defualt-input-field-class-name"}
+              className={classnames?.input }
             />
         </div>
     </div>
@@ -130,6 +113,51 @@ export default function DragComponent() {
 
 <a href="https://www.adewaleda.com/npm-packages/adewale-ui-toolbox" target="_blank">DEMO</a>
 
+### [DEMO](https://www.adewaleda.com/npm-packages/adewale-ui-toolbox) Image Carousel
+
+```
+
+import {ImageCarousel} from "adewale-ui-toolbox";
+
+export default function DragComponent() {
+  const images = [
+    {
+      url: "https://...",
+      child: <CarouselContent />,
+    },
+    {
+      url: "https://...",
+    },
+    {
+      url: "https://...",
+    },
+  ];
+  return (
+      <ImageCarousel
+        images={images?.map((item) => ({
+          url: item?.url,
+          child: item?.child,
+        }))}
+      />
+  );
+}
+function CarouselContent() {
+  return (
+    <div className="">
+      <h6>Latest News & Updates</h6>
+      <p>
+        Turpis interdum nunc varius ornare dignissim pretium. Massa ornare quis
+        aliquet sed vitae. Sed velit nisi, fermentum erat. Fringilla purus, erat
+        fringilla tincidunt quisque non. Pellentesque in ut tellus.
+      </p>
+    </div>
+  );
+}
+
+```
+
 ## What is new?
 
-> > Added drag to reorder component with the characteristics to enable input fields, allow images or just text with purely customizable CSS functionality or default CSS
+> > 20.10.24 - Image carousel ui component added
+
+> > 19.10.224 - Added drag to reorder component with the characteristics to enable input fields, allow images or just text with purely customizable CSS functionality or default CSS

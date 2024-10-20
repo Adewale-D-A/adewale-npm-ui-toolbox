@@ -1,4 +1,5 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
+import { ReactNode } from 'react';
 
 declare function CalendarView({ date, highlights, }: {
     date?: Date;
@@ -32,4 +33,22 @@ declare function DragToReOrder({ data, setData, classnames, allowDelete, inputCo
     };
 }): react_jsx_runtime.JSX.Element;
 
-export { CalendarView, DragToReOrder };
+declare function ImageCarousel({ images, classnames, }: {
+    images: {
+        url: string;
+        child?: ReactNode;
+    }[];
+    classnames?: {
+        parentContainer?: string;
+        image?: string;
+        counterContainer?: string;
+        counterButton?: string;
+        counterButtonActive?: string;
+        counterButtonInactive?: string;
+        navigationButtonContainer?: string;
+        navigationButton?: string;
+        childContainer?: string;
+    };
+}): react_jsx_runtime.JSX.Element;
+
+export { CalendarView, DragToReOrder, ImageCarousel };

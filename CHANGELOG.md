@@ -1,3 +1,7 @@
+##### 20.10.2024 (Feature Update - Image Carousel - v1.1.3)
+
+> Image Carousel component UI integration
+
 ##### 19.10.2024 (Feature Update - Drag to Reorder - v1.1.1)
 
 > Readme documentation addition
