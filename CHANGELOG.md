@@ -1,4 +1,4 @@
-##### 20.10.2024 (Feature Update - Image Carousel - v1.1.3)
+##### 20.10.2024 (Feature Update - Image Carousel - v1.1.4)
 
 > Image Carousel component UI integration
 
