@@ -1,6 +1,6 @@
 # Custom NPM packages for reusable and useful UI components
 
-## Version - V1.1.1
+## Version - V1.1.5
 
 ## DOCUMENTATION
 
@@ -138,6 +138,7 @@ export default function DragComponent() {
           url: item?.url,
           child: item?.child,
         }))}
+          autoTransitionOptions={{ allow: true, seconds: 8 }}
       />
   );
 }
@@ -158,6 +159,7 @@ function CarouselContent() {
 
 ## What is new?
 
+> > 21.10.24 - Image carousel auto scroll (optional feature)
 > > 20.10.24 - Image carousel ui component added
 
 > > 19.10.224 - Added drag to reorder component with the characteristics to enable input fields, allow images or just text with purely customizable CSS functionality or default CSS

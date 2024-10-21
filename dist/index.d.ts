@@ -33,7 +33,7 @@ declare function DragToReOrder({ data, setData, classnames, allowDelete, inputCo
     };
 }): react_jsx_runtime.JSX.Element;
 
-declare function ImageCarousel({ images, classnames, }: {
+declare function ImageCarousel({ images, classnames, autoTransitionOptions, }: {
     images: {
         url: string;
         child?: ReactNode;
@@ -48,6 +48,10 @@ declare function ImageCarousel({ images, classnames, }: {
         navigationButtonContainer?: string;
         navigationButton?: string;
         childContainer?: string;
+    };
+    autoTransitionOptions?: {
+        allow: boolean;
+        seconds: number;
     };
 }): react_jsx_runtime.JSX.Element;
 
