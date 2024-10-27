@@ -1,6 +1,6 @@
 # Custom NPM packages for reusable and useful UI components
 
-## Version - V1.1.5
+## Version - V1.1.6
 
 ## DOCUMENTATION
 
@@ -159,6 +159,7 @@ function CarouselContent() {
 
 ## What is new?
 
+> > 27.10.24 - Image carousel hover animation stop
 > > 21.10.24 - Image carousel auto scroll (optional feature)
 > > 20.10.24 - Image carousel ui component added
 

@@ -1,3 +1,7 @@
+##### 21.10.2024 (Feature Update - Image Carousel, auto scroll - v1.1.6)
+
+> Image Carousel onhover animation stop
+
 ##### 21.10.2024 (Feature Update - Image Carousel, auto scroll - v1.1.5)
 
 > Image Carousel auto scroll (optional feature)
