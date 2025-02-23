@@ -55,4 +55,13 @@ declare function ImageCarousel({ images, classnames, autoTransitionOptions, }: {
     };
 }): react_jsx_runtime.JSX.Element;
 
-export { CalendarView, DragToReOrder, ImageCarousel };
+declare function TriggerDownload({ uri, filename, label, className, startIcon, endIcon, }: {
+    uri: string;
+    filename: string;
+    label?: string;
+    className?: string;
+    startIcon?: ReactNode;
+    endIcon?: ReactNode;
+}): react_jsx_runtime.JSX.Element;
+
+export { CalendarView, DragToReOrder, ImageCarousel, TriggerDownload };

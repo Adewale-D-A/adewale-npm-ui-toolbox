@@ -1,10 +1,22 @@
 # Custom NPM packages for reusable and useful UI components
 
-## Version - V1.1.6
+## Version - V1.1.13
 
 ## DOCUMENTATION
 
-### [DEMO](https://www.adewaleda.com/npm-packages/adewale-ui-toolbox) Drag-to-reorder
+### [DEMO - Auto Download Trigger](https://www.adewaleda.com/npm-packages/adewale-ui-toolbox)Download Trigger
+
+```
+import {TriggerDownload} from "adewale-ui-toolbox";
+
+export default function SampleComponent (){
+  return (
+    <TriggerDownload url={file_path} filename={file_name} />
+  )
+}
+```
+
+### [DEMO - Drag to Reorder](https://www.adewaleda.com/npm-packages/adewale-ui-toolbox) Drag-to-reorder
 
 ```
 
@@ -109,11 +121,9 @@ export default function DragComponent() {
 
 ```
 
-### Calendar-view
+### [DEMO - Calendar View](https://www.adewaleda.com/npm-packages/adewale-ui-toolbox)Calendar View
 
-<a href="https://www.adewaleda.com/npm-packages/adewale-ui-toolbox" target="_blank">DEMO</a>
-
-### [DEMO](https://www.adewaleda.com/npm-packages/adewale-ui-toolbox) Image Carousel
+### [DEMO - Image Carousel](https://www.adewaleda.com/npm-packages/adewale-ui-toolbox) Image Carousel
 
 ```
 
@@ -159,6 +169,7 @@ function CarouselContent() {
 
 ## What is new?
 
+> > 23.02.25 - Auto download file
 > > 27.10.24 - Image carousel hover animation stop
 > > 21.10.24 - Image carousel auto scroll (optional feature)
 > > 20.10.24 - Image carousel ui component added

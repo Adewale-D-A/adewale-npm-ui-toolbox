@@ -1,3 +1,7 @@
+##### 23.02.2025 (Feature Update - Download trigger - v1.1.13)
+
+> Pass a file into the component for auto download of that file
+
 ##### 21.10.2024 (Feature Update - Image Carousel, auto scroll - v1.1.6)
 
 > Image Carousel onhover animation stop
